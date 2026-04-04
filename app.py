@@ -1,7 +1,6 @@
 import streamlit as st
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
-from underthesea import word_tokenize
 
 HF_MODEL_ID = "t59thang/hmvpt-toxic"
 
@@ -19,7 +18,7 @@ def load_model():
     return tokenizer, model
 
 def predict(text, tokenizer, model):
-    processed = word_tokenize(str(text), format="text")
+    processed = str(text)
     inputs = tokenizer(processed, return_tensors="pt", truncation=True,
                        padding=True, max_length=128)
     with torch.no_grad():
