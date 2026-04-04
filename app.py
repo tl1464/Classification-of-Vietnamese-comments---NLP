@@ -14,9 +14,9 @@ HF_MODEL_ID = "t59thang/hmvpt-toxic"
 HF_DATASET_ID = "t59thang/hmvpt-data"
 
 LABEL_MAP = {
-    0: ("✅ SẠCH", "green"),
-    1: ("☠️ TOXIC", "red"),
-    2: ("🚫 SPAM", "orange")
+    0: ("✅ Đây là bình luận Tích cực ", "green"),
+    1: ("☠️ Đây là bình luận Tiêu cực", "red"),
+    2: ("🚫 Đây là bình luận Spam", "orange")
 }
 
 st.set_page_config(page_title="AI Toxic Comment Detection", layout="wide")
