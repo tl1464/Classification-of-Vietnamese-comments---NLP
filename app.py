@@ -84,7 +84,7 @@ if page == "1. Giới thiệu & EDA":
     """)
 
     st.subheader("📄 Dữ liệu mẫu")
-    st.dataframe(df.head(20))
+    st.dataframe(df.head(20) ,use_container_width=True, height=400)
 
     col1, col2 = st.columns(2)
 
