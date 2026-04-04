@@ -1,4 +1,4 @@
-streamlit
-torch
+streamlit==1.32.2
 transformers==4.41.2
-huggingface_hub
+torch==2.2.2
+huggingface_hub==0.23.0
