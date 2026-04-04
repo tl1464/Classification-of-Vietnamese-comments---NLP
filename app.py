@@ -72,8 +72,7 @@ if page == "1. Giới thiệu & EDA":
     st.title("📊 Phân tích bình luận độc hại (Toxic Comment Detection)")
 
     st.markdown("""
-    **👤 Sinh viên: ĐỖ ĐOÀN MINH THẮNG 
-    **🆔 MSSV:** 22T1020424 
+    **👤 Sinh viên: ĐỖ ĐOÀN MINH THẮNG - 22T1020424 
 
     ### 🎯 Mục tiêu
     Xây dựng hệ thống AI giúp phát hiện bình luận độc hại, spam trên mạng xã hội.
@@ -94,7 +93,7 @@ if page == "1. Giới thiệu & EDA":
         st.subheader("📊 Phân phối nhãn")
         fig, ax = plt.subplots()
         df['label'].value_counts().plot(kind='bar', ax=ax)
-        ax.set_xticklabels(["SẠCH", "TOXIC", "SPAM"])
+        ax.set_xticklabels(["Đây là bình luận Tích cực", "Đây là bình luận Tiêu cực", "Đây là bình luận Spam"], rotation=0)
         st.pyplot(fig)
 
     # 📊 Biểu đồ 2
